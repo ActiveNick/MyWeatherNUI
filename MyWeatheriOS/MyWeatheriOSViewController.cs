@@ -58,7 +58,7 @@ namespace MyWeatheriOS
 
         #endregion
 
-        async partial void btnGetWeather_TouchUpInside(UIButton sender)
+        async partial void BtnGetWeather_TouchUpInside(UIButton sender)
         {
             string location = txtLocation.Text.Trim();
 
@@ -66,7 +66,7 @@ namespace MyWeatheriOS
             if (wr != null)
             {
                 var weatherMessage = "The current temperature in {0} is {1}°F, with a high today of {2}°F and a low of {3}°F.";
-                lblMessage.Text = string.Format(weatherMessage, wr.Name, (int)wr.MainWeather.Temp, (int)wr.MainWeather.MaximumTemp, (int)wr.MainWeather.MinimumTemp);
+                lblMessage.Text = string.Format(weatherMessage, wr.name, (int)wr.main.temp, (int)wr.main.temp_max, (int)wr.main.temp_min);
             }
 
         }

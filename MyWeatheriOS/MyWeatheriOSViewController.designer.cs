@@ -4,9 +4,9 @@
 // actions declared in your storyboard file.
 // Manual changes to this file will not be maintained.
 //
-using System;
 using MonoTouch.Foundation;
 using MonoTouch.UIKit;
+using System;
 using System.CodeDom.Compiler;
 
 namespace MyWeatheriOS
@@ -26,9 +26,9 @@ namespace MyWeatheriOS
 		[GeneratedCode ("iOS Designer", "1.0")]
 		UITextField txtLocation { get; set; }
 
-		[Action ("btnGetWeather_TouchUpInside:")]
+		[Action ("BtnGetWeather_TouchUpInside:")]
 		[GeneratedCode ("iOS Designer", "1.0")]
-		partial void btnGetWeather_TouchUpInside (UIButton sender);
+		partial void BtnGetWeather_TouchUpInside (UIButton sender);
 
 		void ReleaseDesignerOutlets ()
 		{
